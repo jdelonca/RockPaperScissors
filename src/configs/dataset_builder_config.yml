@@ -1,0 +1,7 @@
+sequence: # keys are classes, values are duration in seconds
+  rock: 10
+  paper: 10
+  scissors: 10  
+n_repeat: 3  # number of time to repeat the sequence
+transition_time: 3  # number of seconds between each class
+out_name: rock_paper_scissors.csv

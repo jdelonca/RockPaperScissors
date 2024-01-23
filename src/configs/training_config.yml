@@ -1,0 +1,12 @@
+model_type: mlp
+model_specific_params:
+  solver: lbfgs
+  max_iter: 1000
+
+cross_val_folds: 5
+grid_search_ranges:
+  alpha: [0.001, 0.0001]
+  activation: ['identity', 'logistic', 'tanh', 'relu']
+  hidden_layer_sizes: [[100], [100, 10], [50, 50], [25, 50, 25]]
+
+model_file: RPS_classifier.joblib
